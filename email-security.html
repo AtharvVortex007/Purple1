@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course: Email Security Basics - CyberSafe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container"><div class="header-content"><a href="index.html" class="logo"><i class="fas fa-shield-alt"></i><h1>CyberSafe</h1></a><nav><ul><li><a href="index.html">Home</a></li><li><a href="index.html#courses">Courses</a></li></ul></nav></div></div>
+    </header>
+    <main class="course-page-wrapper">
+        <div class="container">
+            <div class="course-page-content">
+                <div class="course-page-header">
+                    <h1>Email Security Basics</h1>
+                    <a href="index.html#courses" class="back-link">&larr; Back to All Courses</a>
+                </div>
+                <div class="course-page-body">
+                    <h3>7-Day Course Outline</h3>
+                    <div class="course-syllabus">
+                        <ul>
+                            <li><b>Day 1:</b> Anatomy of an Email - Understanding the "From," "To," and "Subject" fields.</li>
+                            <li><b>Day 2:</b> Spotting a Fake Sender - How to check if the sender's email address is legitimate.</li>
+                            <li><b>Day 3:</b> Safe Attachments - Why you should never open unexpected attachments, especially .zip or .exe files.</li>
+                            <li><b>Day 4:</b> Understanding Spam - What is spam and how do spam filters work to protect you?</li>
+                            <li><b>Day 5:</b> The "Reply All" Danger - Learning proper email etiquette to avoid sharing information accidentally.</li>
+                            <li><b>Day 6:</b> Phishing Refresher - A quick review of the most common type of email threat.</li>
+                            <li><b>Day 7:</b> Reporting and Deleting - The proper way to handle suspicious emails.</li>
+                        </ul>
+                    </div>
+                    <h3>Quick Quiz</h3>
+                    <div class="quiz">
+                        <div class="quiz-question">
+                            <p>1. An email from "Amaz0n.com" (with a zero) instead of "Amazon.com" is likely...</p>
+                            <div class="quiz-options">
+                                <label><input type="radio" name="q1" value="a"> From their international branch.</label>
+                                <label data-correct="true"><input type="radio" name="q1" value="b"> A scam trying to trick you.</label>
+                                <label><input type="radio" name="q1" value="c"> A typo, but it's safe.</label>
+                            </div>
+                        </div>
+                        <div class="quiz-question">
+                            <p>2. What should you do with an email you suspect is spam or a phishing attempt?</p>
+                            <div class="quiz-options">
+                                <label><input type="radio" name="q2" value="a"> Reply to them and ask them to stop.</label>
+                                <label><input type="radio" name="q2" value="b"> Forward it to all your friends to warn them.</label>
+                                <label data-correct="true"><input type="radio" name="q2" value="c"> Mark it as spam/junk and then delete it without clicking any links.</label>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline show-answers-btn">Show Answers</button>
+                    </div>
+                    <h3>Frequently Asked Questions</h3>
+                    <div class="faq">
+                        <div class="faq-item"><strong>Is it safe to click "unsubscribe" on a spam email?</strong><p>It can be risky. Clicking "unsubscribe" on a legitimate marketing email is fine. But on a spam email, it just confirms to the spammer that your email address is active, which can lead to even more spam. It's safer to just mark the email as spam.</p></div>
+                        <div class="faq-item"><strong>My friend sent me an attachment. Is it safe to open?</strong><p>If you were expecting it, it's likely safe. If it's unexpected and has a generic message like "Check this out!", be cautious. Your friend's account could have been hacked. It's always best to confirm with them through a different method (like a text message) before opening it.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer><div class="container"><div class="copyright">&copy; 2025 CyberSafe. All Rights Reserved.</div></div></footer>
+    <script>document.addEventListener('DOMContentLoaded',()=>{const t=document.querySelector('.show-answers-btn');t.addEventListener('click',()=>{const e=t.closest('.quiz').querySelectorAll('label[data-correct="true"]');e.forEach(t=>{t.classList.add('correct-answer');const e=t.querySelector('input[type="radio"]');e&&(e.checked=!0)})})});</script>
+</body>
+</html>

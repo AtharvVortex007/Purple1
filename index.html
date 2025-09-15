@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSafe - Cybersecurity Awareness Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-shield-alt"></i>
+                    <h1>CyberSafe</h1>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div id="user-auth" class="auth-buttons">
+                    <button id="login-btn" class="btn btn-outline">Login</button>
+                    <div id="user-info" style="display: none; color: white; align-items: center; gap: 15px;">
+                        <span id="user-name"></span>
+                        <button id="logout-btn" class="btn btn-outline">Logout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Empowering Your Digital Defense</h2>
+                <p>Gain the essential skills to protect yourself and your organization from modern cyber threats. Interactive, engaging, and effective cybersecurity education for everyone.</p>
+                <button class="btn btn-primary btn-large login-trigger-btn">Access Courses</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="motto">
+        <div class="container">
+            <div class="motto-content">
+                <div class="motto-item">Learn. <i class="fas fa-chevron-right"></i></div>
+                <div class="motto-item">Practice. <i class="fas fa-chevron-right"></i></div>
+                <div class="motto-item">Prove.</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>A Better Way to Learn Cybersecurity</h2>
+                <p>We've designed our platform to make learning practical and engaging, not just theoretical.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-clone"></i></div>
+                    <h3>Flashcards</h3>
+                    <p>Quickly memorize key terms and concepts with our interactive flashcard system, perfect for on-the-go learning.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-tasks"></i></div>
+                    <h3>Assessments</h3>
+                    <p>Test your knowledge with practical quizzes and assessments that challenge your understanding of real-world scenarios.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Simulations</h3>
+                    <p>Apply your skills in realistic, simulated environments where you can safely practice responding to cyber threats.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="courses-preview" id="courses">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Cybersecurity Courses</h2>
+                <p>Log in to access our full library of courses. Here's a preview of what's available.</p>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-img"><i class="fas fa-lock"></i></div>
+                    <div class="course-content"><h3>Password Security Essentials</h3></div>
+                </div>
+                <div class="course-card">
+                    <div class="course-img"><i class="fas fa-fish"></i></div>
+                    <div class="course-content"><h3>Phishing Awareness</h3></div>
+                </div>
+                <div class="course-card">
+                    <div class="course-img"><i class="fas fa-wifi"></i></div>
+                    <div class="course-content"><h3>Wi-Fi Security</h3></div>
+                </div>
+            </div>
+            <br>
+            <div style="text-align: center; margin-top: 30px;">
+                <button class="btn btn-primary btn-large login-trigger-btn">View All 13 Courses</button>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About CyberSafe</h3>
+                    <p>Our mission is to empower individuals and organizations to stay safe in the digital world through accessible, engaging, and effective education.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <p>123 Cyber Lane, Tech Park<br>Kothri Kalan, MP 466001</p>
+                    <p>Email: support@cybersafe.example<br>Phone: +91 123-456-7890</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 CyberSafe. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <div class="fab-signup login-trigger-btn">
+        <i class="fab fa-google"></i>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    <script>
+      const firebaseConfig = {
+        apiKey: "YOUR_API_KEY",
+        authDomain: "YOUR_AUTH_DOMAIN",
+        projectId: "YOUR_PROJECT_ID",
+        storageBucket: "YOUR_STORAGE_BUCKET",
+        messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+        appId: "YOUR_APP_ID"
+      };
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="auth.js"></script>
+</body>
+</html>

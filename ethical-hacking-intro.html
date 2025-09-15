@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course: Introduction to Ethical Hacking - CyberSafe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header style="position: sticky; background: var(--primary-dark);">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo"><i class="fas fa-shield-alt"></i><h1>CyberSafe</h1></a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                    </ul>
+                </nav>
+                <div id="user-auth" class="auth-buttons">
+                    <button id="login-btn" class="btn btn-outline">Login</button>
+                    <div id="user-info" style="display: none; color: white; align-items: center; gap: 15px;">
+                        <span id="user-name"></span>
+                        <button id="logout-btn" class="btn btn-outline">Logout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="course-page-wrapper">
+        <div class="container">
+            <div class="course-page-content">
+                <div class="course-page-header">
+                    <h1>Introduction to Ethical Hacking</h1>
+                    <a href="courses.html" class="back-link">&larr; Back to All Courses</a>
+                </div>
+                <div class="course-page-body">
+                    <h3>7-Day Course Outline</h3>
+                    <div class="course-syllabus">
+                        <ul>
+                            <li><b>Day 1:</b> Thinking Like an Attacker - Understanding hacker motivations and methodologies.</li>
+                            <li><b>Day 2:</b> The Five Phases of Hacking - Reconnaissance, Scanning, Gaining Access, Maintaining Access, and Covering Tracks.</li>
+                            <li><b>Day 3:</b> Reconnaissance - An introduction to passive and active information gathering techniques.</li>
+                            <li><b>Day 4:</b> Scanning Tools - A look at basic network scanning with tools like Nmap.</li>
+                            <li><b>Day 5:</b> Understanding Vulnerabilities - Learning about common weaknesses like SQL Injection and XSS.</li>
+                            <li><b>Day 6:</b> Social Engineering - The art of manipulating people to gain access to systems.</li>
+                            <li><b>Day 7:</b> The Importance of Ethics - Understanding the legal and ethical boundaries of penetration testing.</li>
+                        </ul>
+                    </div>
+
+                    <h3>Knowledge Check</h3>
+                    <button class="quiz-toggle-btn">Take the Quiz</button>
+                    <div class="quiz-content">
+                        <div class="quiz-question"><p>1. What is the primary difference between an ethical hacker and a malicious attacker?</p><div class="quiz-options"><label><input type="radio" name="q1" value="a"> The tools they use.</label><label data-correct="true"><input type="radio" name="q1" value="b"> Permission. An ethical hacker has explicit permission to test a system.</label><label><input type="radio" name="q1" value="c"> Their skill level.</label></div></div>
+                        <div class="quiz-question"><p>2. The first phase of any hacking methodology is...</p><div class="quiz-options"><label><input type="radio" name="q2" value="a"> Gaining Access.</label><label><input type="radio" name="q2" value="b"> Scanning.</label><label data-correct="true"><input type="radio" name="q2" value="c"> Reconnaissance (Information Gathering).</label></div></div>
+                        <button class="btn show-answers-btn">Show Answers</button>
+                    </div>
+
+                    <h3>Frequently Asked Questions</h3>
+                    <div class="faq">
+                        <div class="faq-item"><strong>Is ethical hacking legal?</strong><p>Yes, it is legal as long as you have explicit, written permission from the owner of the system you are testing. Without permission, it is a crime.</p></div>
+                        <div class="faq-item"><strong>Do I need to be a programmer to be an ethical hacker?</strong><p>While not strictly required for beginner concepts, strong programming and scripting skills become increasingly important as you advance in the field. They allow you to understand code, find flaws, and automate tasks.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyD8v3HWg1az6n5T1wZUN0uWJBTNFO_YysM",
+        authDomain: "cyberpurple-e502f.firebaseapp.com",
+        projectId: "cyberpurple-e502f",
+        storageBucket: "cyberpurple-e502f.firebasestorage.app",
+        messagingSenderId: "1000807148282",
+        appId: "1:1000807148282:web:fb02aea8e5e18a5e63f743",
+        measurementId: "G-WNW7QSLXW8"
+      };
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course: Social Media Security - CyberSafe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header style="position: sticky; background: var(--primary-dark);">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo"><i class="fas fa-shield-alt"></i><h1>CyberSafe</h1></a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                    </ul>
+                </nav>
+                <div id="user-auth" class="auth-buttons">
+                    <button id="login-btn" class="btn btn-outline">Login</button>
+                    <div id="user-info" style="display: none; color: white; align-items: center; gap: 15px;">
+                        <span id="user-name"></span>
+                        <button id="logout-btn" class="btn btn-outline">Logout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="course-page-wrapper">
+        <div class="container">
+            <div class="course-page-content">
+                <div class="course-page-header">
+                    <h1>Social Media Security</h1>
+                    <a href="courses.html" class="back-link">&larr; Back to All Courses</a>
+                </div>
+                <div class="course-page-body">
+                    <h3>7-Day Course Outline</h3>
+                    <div class="course-syllabus">
+                        <ul>
+                            <li><b>Day 1:</b> Strong Account Security - Setting strong passwords and enabling Two-Factor Authentication (2FA) on your profiles.</li>
+                            <li><b>Day 2:</b> Privacy Settings - A deep dive into Facebook, Instagram, and X (Twitter) privacy controls.</li>
+                            <li><b>Day 3:</b> Recognizing Scams - How to spot fake profiles, phishing links, and fraudulent giveaways.</li>
+                            <li><b>Day 4:</b> The Perils of Oversharing - Understanding what not to share, from vacation plans to personal details.</li>
+                            <li><b>Day 5:</b> Third-Party App Dangers - How to review and remove risky third-party apps connected to your accounts.</li>
+                            <li><b>Day 6:</b> Dealing with Impersonation & Harassment - Steps to take if your account is cloned or if you're being harassed.</li>
+                            <li><b>Day 7:</b> Creating a Positive Digital Reputation - Managing your online presence for personal and professional success.</li>
+                        </ul>
+                    </div>
+
+                    <h3>Knowledge Check</h3>
+                    <button class="quiz-toggle-btn">Take the Quiz</button>
+                    <div class="quiz-content">
+                        <div class="quiz-question"><p>1. Before you post vacation photos, what is a good security practice?</p><div class="quiz-options"><label><input type="radio" name="q1" value="a"> Tag the location so everyone knows where you are.</label><label data-correct="true"><input type="radio" name="q1" value="b"> Wait until you get home to post them.</label><label><input type="radio" name="q1" value="c"> Post them with your home address.</label></div></div>
+                        <div class="quiz-question"><p>2. A quiz that asks for your mother's maiden name or the street you grew up on is likely...</p><div class="quiz-options"><label data-correct="true"><input type="radio" name="q2" value="a"> A form of data mining to get answers to common security questions.</label><label><input type="radio" name="q2" value="b"> Just a fun, harmless game.</label><label><input type="radio" name="q2" value="c"> A way to verify your identity for the social media platform.</label></div></div>
+                        <button class="btn show-answers-btn">Show Answers</button>
+                    </div>
+
+                    <h3>Frequently Asked Questions</h3>
+                    <div class="faq">
+                        <div class="faq-item"><strong>Should I accept friend requests from people I don't know?</strong><p>No. Accepting requests from strangers can expose your personal information to scammers and criminals. It's best to only connect with people you know and trust in the real world.</p></div>
+                        <div class="faq-item"><strong>Are the links in direct messages (DMs) always safe?</strong><p>No, you should be very cautious. Scammers often compromise accounts and then send malicious links to all of that person's friends. If a link looks suspicious, even from a friend, verify it with them through another method before clicking.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic

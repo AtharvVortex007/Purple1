@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Courses - CyberSafe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header style="position: sticky; background: var(--primary-dark);">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-shield-alt"></i>
+                    <h1>CyberSafe</h1>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                    </ul>
+                </nav>
+                <div id="user-auth" class="auth-buttons">
+                    <button id="login-btn" class="btn btn-outline">Login</button>
+                    <div id="user-info" style="display: none; color: white; align-items: center; gap: 15px;">
+                        <span id="user-name"></span>
+                        <button id="logout-btn" class="btn btn-outline">Logout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="courses-preview" style="padding: 80px 0;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Full Course Library</h2>
+                <p>Welcome! Select a course to begin your learning journey.</p>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-img"><i class="fas fa-lock"></i></div>
+                    <div class="course-content">
+                        <h3>Password Security Essentials</h3>
+                        <p>Master the art of creating and managing secure passwords to protect your digital identity.</p>
+                        <div class="course-meta"><span><i class="far fa-clock"></i> 7 days</span><span><i class="fas fa-user-graduate"></i> Beginner</span></div>
+                        <a href="password-security.html" class="btn btn-primary">Start Course</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-img"><i class="fas fa-fish"></i></div>
+                    <div class="course-content">
+                        <h3>Phishing Awareness Training</h3>
+                        <p>Learn to identify and report phishing attempts, protecting your personal and company data.</p>
+                        <div class="course-meta"><span><i class="far fa-clock"></i> 7 days</span><span><i class="fas fa-user-graduate"></i> Beginner</span></div>
+                        <a href="phishing-awareness.html" class="btn btn-primary">Start Course</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-img"><i class="fas fa-globe"></i></div>
+                    <div class="course-content">
+                        <h3>Secure Browsing Habits</h3>
+                        <p>Discover best practices for browsing the web safely, avoiding malware, and protecting your privacy online.</p>
+                        <div class="course-meta"><span><i class="far fa-clock"></i> 7 days</span><span><i class="fas fa-user-graduate"></i> Intermediate</span></div>
+                        <a href="secure-browsing.html" class="btn btn-primary">Start Course</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-img"><i class="fas fa-user-secret"></i></div>
+                    <div class="course-content">
+                        <h3>Data Privacy Fundamentals</h3>
+                        <p>Understand your digital footprint and learn how to manage your personal data online.</p>
+                        <div class="course-meta"><span><i class="far fa-clock"></i> 7 days</span><span><i class="fas fa-user-graduate"></i> Beginner</span></div>
+                        <a href="data-privacy.html" class="btn btn-primary">Start Course</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-img"><i class="fas fa-share-alt"></i></div>
+                    <div class="course-content">
+                        <h3>Social Media Security</h3>
+                        <p>Learn to secure your social media profiles, identify scams, and share content safely.</p>
+                        <div class="course-meta"><span><i class="far fa-clock"></i> 7 days</span><span><i class="fas fa-user-graduate"></i> Beginner</span></div>
+                        <a href="social-media-security.html" class="btn btn-primary">Start Course</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-img"><i class="fas fa-file-invoice-dollar"></i></div>
+                    <div class="course-content">
+                        <h3>Ransomware Recognition</h3>
+                        <p>Discover how ransomware works, how to prevent infections, and what steps to take if you are a victim.</p>
+                        <div class="course-meta"><span><i class="far fa-clock"></i> 7 days</span><span><i class="fas fa-user-graduate"></i> Intermediate</span></div>
+                        <a href="ransomware-response.html" class="btn btn-primary">Start Course</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-img"><i class="fas fa-mobile-alt"></i></div>
+                    <div class="course-content">
+                        <h3>Mobile Device Security</h3>
+                        <p>Secure your smartphone and tablet against common threats, from malicious apps to public Wi-Fi.</p>
+                        <div class="course-meta"><span><i class="far fa-clock"></i> 7 days</span><span><i class="fas fa-user-graduate"></i> Beginner</span></div>
+                        <a href="mobile-security.html" class="btn btn-primary">Start Course</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-img"><i class="fas fa-house-user"></i></div>
+                    <div class="course-content">
+                        <h3>IoT & Smart Home Security</h3>
+                        <p>Learn to protect your smart devices, from TVs to speakers, from being compromised by attackers.</p>
+                        <div class="course-meta"><span><i class="far fa-clock"></i> 7 days</span><span><i class="fas fa-user-graduate"></i> Intermediate</span></div>
+                        <a href="iot-security.html" class="btn btn-primary">Start Course</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-img"><i class="fas fa-cloud"></i></div>
+                    <div class="course-content">
+                        <h3>Cloud Security Basics</h3>
+                        <p>Understand the basics of cloud storage and how to properly secure your files on popular services.</p>
+                        <div class="course-meta"><span><i class="far fa-clock"></i> 7 days</span><span><i class="fas fa-user-graduate"></i> Intermediate</span></div>
+                        <a href="cloud-security.html" class="btn btn-primary">Start Course</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-img"><i class="fas fa-users"></i></div>
+                    <div class="course-content">
+                        <h3>Cybersecurity Culture</h3>
+                        <p>For team leads on promoting security awareness and best practices within an organization.</p>
+                        <div class="course-meta"><span><i class="far fa-clock"></i> 7 days</span><span><i class="fas fa-user-graduate"></i> Advanced</span></div>
+                        <a href="cybersecurity-culture.html" class="btn btn-primary">Start Course</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-img"><i class="fas fa-search"></i></div>
+                    <div class="course-content">
+                        <h3>Digital Forensics Intro</h3>
+                        <p>Get a beginner's look into the world of digital forensics and how investigators trace digital evidence.</p>
+                        <div class="course-meta"><span><i class="far fa-clock"></i> 7 days</span><span><i class="fas fa-user-graduate"></i> Advanced</span></div>
+                        <a href="digital-forensics.html" class="btn btn-primary">Start Course</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-img"><i class="fas fa-user-ninja"></i></div>
+                    <div class="course-content">
+                        <h3>Ethical Hacking Intro</h3>
+                        <p>Learn about the mindset and basic techniques used by ethical hackers to find vulnerabilities.</p>
+                        <div class="course-meta"><span><i class="far fa-clock"></i> 7 days</span><span><i class="fas fa-user-graduate"></i> Advanced</span></div>
+                        <a href="ethical-hacking-intro.html" class="btn btn-primary">Start Course</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-img"><i class="fas fa-wifi"></i></div>
+                    <div class="course-content">
+                        <h3>Wi-Fi Security</h3>
+                        <p>Learn to secure your home Wi-Fi network and safely use public Wi-Fi without putting your data at risk.</p>
+                        <div class="course-meta"><span><i class="far fa-clock"></i> 7 days</span><span><i class="fas fa-user-graduate"></i> Beginner</span></div>
+                        <a href="wifi-security.html" class="btn btn-primary">Start Course</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    <script>
+      const firebaseConfig = {
+        apiKey: "YOUR_API_KEY",
+        authDomain: "YOUR_AUTH_DOMAIN",
+        projectId: "YOUR_PROJECT_ID",
+        storageBucket: "YOUR_STORAGE_BUCKET",
+        messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+        appId: "YOUR_APP_ID"
+      };
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="auth.js"></script>
+</body>
+</html>
